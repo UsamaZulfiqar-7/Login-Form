@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  width: 900px;
+  max-width: 95%;
+}
+
+/* Image Section */
+.image-section {
+  flex: 1;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-image {
+  width: 90%;
+  max-width: 420px;
+  display: block;
+}
+
+/* Form Section */
+.form-section {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.toggle-buttons button {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  background: none;
+  color: #aaa;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.toggle-buttons button.active {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+/* Forms */
+.form {
+  display: none;
+  flex-direction: column;
+}
+
+.form.active-form {
+  display: flex;
+}
+
+.form h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.form input {
+  padding: 16px;
+  margin: 15px 0;
+  font-size: 16px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.form button {
+  padding: 16px;
+  font-size: 18px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form p {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.form a {
+  color: #fff;
+  text-decoration: underline;
+}
